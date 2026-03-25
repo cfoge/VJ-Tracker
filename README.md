@@ -75,10 +75,12 @@ The **palette swatches** on the right show the colours for the **current row** (
 
 **Ctrl+Down** again from mutes. **Left / Right** move between: load image into buffer, palette index, colour slots, save.
 
-- **Enter / Space** on **Load** (image or sprite) opens a file dialog. On **Save** (palette), it writes the edited colours into the selected palette bank slot.
+- **Enter / Space** on **Load** (image or sprite) opens a dialog. On **Save** (palette), it writes the edited colours into the selected palette bank slot.
 - **+ / −** adjust the palette index or channel values depending on what’s selected.
 
 The **image buffer** and **sprite sheet** are part of the project when you **Save** from the song panel (one buffer, one sheet per project).
+
+![all 256 colours](manual/vj_tracker_256_colours.png)
 
 ---
 
@@ -97,6 +99,7 @@ Columns: **I**, **Val**, **C**, **FX**, **G**.
 Digits in **Val** are always hex. When docs say **`XXYY`**, **XX** is the left byte (horizontal / first field) and **YY** is the right byte (vertical / second field), each **00**–**7F** (0–127) for positions on the 128×128 canvas.
 
 ---
+![all instruments](manual/vj_tracker_instruments.png)
 
 ### Shapes — filled (1–19) and outlined (20–34)
 
@@ -185,8 +188,8 @@ Outlined versions use the **same Val layout** as their filled twin; only stroke 
 ### Hexagon vs “hex” in the tracker
 
 - **Hexagon / HexO (14 / 33)** — Normal shape: **`XXYY`** = pixel centre.
-- **TunHex (42)** — Tunnel: **`AABB`** = horizontal centre + rotation; not the same encoding as shape Hexagon.
-- **Cells (53)** — Fullscreen hex **tiling**: **`AABB`** = scroll the pattern in X and Y (offsets), not a single shape position.
+- **TunHex (42)** — Tunnel: **`AABB`** = horizontal centre + rotation; .
+- **Cells (53)** — Fullscreen hex **tiling**: **`AABB`** = scroll the pattern in X and Y (offsets)
 
 ---
 
@@ -197,7 +200,7 @@ Sprites use a **different** instrument set and **extra columns** — there is **
 | Column | Role |
 |--------|------|
 | **I** | **Decimal** `00`–`03`: **01** ImgCrop, **02** ImgScl, **03** SprSheet |
-| **V1** | First param — **four hex digits** — canvas position **`XXYY`** (top-left where content is placed; 0–127) |
+| **V1** | First param — **four hex digits** — canvas position **`XXYY`** (top-left where content is placed. 0–127) |
 | **V2** | Second param — **four hex digits** — depends on instrument (below) |
 | **Sz** | **Two hex digits** — size: maps **00**–**FF** linearly to draw size **16**–**128** px (sprite scale / crop size) |
 | **FX** | Same per-track effects as BG/L1/L2 (effect + 2 hex value digits) |
