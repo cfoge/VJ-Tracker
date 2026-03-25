@@ -85,7 +85,8 @@ Columns: **I** (instrument id), **Val** (4 hex params), **C** (palette index 0�
 
 **I** is two **decimal** digits (e.g. **41** = tunnel square). The tables below list the same id in **hex** so it lines up with how **Val** is split into nibbles.
 
-**G (glide)** — Put **c**, **d**, or **e** in this column to glide from this row’s values toward the **next instrument row** on the same track: **c** = glide params, **d** = glide FX only, **e** = both. **−** or **.** turns glide off. **+ / −** cycles modes. (There’s also an older **Glide** in the FX column; **G** is the one you want so FX stays free.)
+**G (glide)** — Put **c**, **d**, or **e** in this column to glide from this row’s values toward the **next instrument row** on the same track: **c** = glide params, **d** = glide FX only, **e** = both. **−** or **.** turns glide off. **+ / −** cycles modes. 
+FX GLIDE is broken!!!
 
 ### Shape & special instruments (overview)
 
@@ -99,8 +100,6 @@ Columns: **I** (instrument id), **Val** (4 hex params), **C** (palette index 0�
 | 3B | 59 | Voronoi | seed `0000`–`FFFF` |
 | 3C | 60 | Lissajous | **a**, **b** in first two nibbles; **phase** in last byte (0–255); glide **phase** for motion |
 | 3D | 61 | Rose | first byte: **petals** (2–50); second byte: **rotation** (0–255 → full turn) |
-
-The full list through **Spectrum** (57) matches the in-app instrument menu; **Metaball**, **Voronoi**, **Lissajous**, and **Rose** are the extra fullscreen-style ones at the end.
 
 **Fullscreen generators (roughly 49–57)** — Things like **Plasma**, **Ripples**, **Spiral**, etc. fill the layer; **Val** is usually **`AABB`** with different meanings per instrument (phase, scale, spacing…). **C** on the multi-colour ones (**Plasma**, **Plasma2**, **Fire**, **Waves**, **Spectrum**) controls how many palette colours are used from index 0 upward; other instruments use **C** as a normal palette index.
 
