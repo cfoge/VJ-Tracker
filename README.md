@@ -2,9 +2,9 @@
 
 This is a free tracker but for lofi vjing/ The canvas is 128×128 Use **Ctrl+Up / Ctrl+Down** to hop between the **song bar** at the top, the **tracker**, **mutes**, and the **palette** section at the bottom.
 
-CLICK THE CODE BUTTON ABOVE AND TO THE LEFT, DOWNLOAD THE ZIP AND RUN THE EXE!
+DOWNLOAD THE "VJ Tracker.zip" file by clicking on it above and then clicking the downoad raw button.
 
-Expect some bugs!
+This is an alpha version so Expect some bugs!
 ---
 
 ## 1. Keyboard cheat sheet
