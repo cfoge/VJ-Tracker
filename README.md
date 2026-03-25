@@ -2,7 +2,7 @@
 
 This is a free tracker but for lofi vjing/ The canvas is 128×128 Use **Ctrl+Up / Ctrl+Down** to hop between the **song bar** at the top, the **tracker**, **mutes**, and the **palette** section at the bottom.
 
-DOWNLOAD THE ZIP AND RUN THE EXE!
+CLICK THE CODE BUTTON ABOVE AND TO THE LEFT, DOWNLOAD THE ZIP AND RUN THE EXE!
 
 Expect some bugs!
 ---
